@@ -1,0 +1,517 @@
+/* BASIC SETUP */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+section{
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.clearfix{zoom:1;}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/*REUSABLE COMPONENTS*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.center{
+    text-align: center;
+}
+/*HEADINGS*/
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;   
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+h2{
+    font-size: 180%;
+}
+h3{
+    font-size: 150%;
+}
+h2:after{
+    background-color: #401c91;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 180px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+/*HEADER*/
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.search-box{
+    position: absolute;
+    text-align: center;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.search-input input[type=text]{
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: url('img/search-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    font-style: italic;
+    font-weight: 400;
+    padding: 0 80px;
+    font-size: 180%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 70px;
+}
+
+
+/*Components*/
+*:focus{
+    outline: none;
+}
+.search-btn:link,
+.search-btn:visited{
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: #137b0f;
+    border: 1px solid #137b0f;
+    color: #fff;
+}
+.search-btn:hover,
+.search-btn:active{
+    background-color: #0e5a0b;
+    border: 1px solid #0e5a0b;
+}
+input[type=submit]{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    border-radius: 10px;
+    background-color: #137b0f;
+    transition: background-color 0.2s, border 0.2s,color 0.2s;
+}
+input[type=submit]:hover{
+    background-color: #0e5a0b;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+textarea{
+    height: 100px;
+}
+
+/*LOGO AND NAVIGATION*/
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.logo-trans{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 35px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 6px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #601236;
+}
+.mobile-nav-icon,
+.mobile-login-icon{
+    display: none;
+}
+/*Stiky Navigation*/
+
+.stiky{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 2px #afafaf;
+    z-index: 9999;
+}
+.stiky .main-nav{ margin-top: 19px;}
+.stiky .main-nav li a:link,
+.stiky .main-nav li a:visited{
+    padding: 15px 0;
+    color: #555;
+}
+.stiky .logo{display: none;}
+.stiky .logo-trans{display: block;}
+
+
+/*Donation Section*/
+
+.section-donate {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.81),rgba(0, 0, 0, 0.81)),url('img/books_life.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.donate-form{
+    width: 70%;
+    margin: 0% auto;
+}
+
+/*HOW IT WORKS SECTION*/
+
+.step-box{
+    text-align: right;
+    margin-top: 20px;
+    padding-right: 3%;
+}
+.step-box:last-child{
+    text-align: left;
+    margin-top: 50px;
+}
+.app-screen{
+    width: 100%;
+}
+.work-steps{
+    margin-bottom: 30px;
+}
+.work-steps p{
+    font-size: 150%;
+    display: inline-block;
+}
+.work-steps div{
+    color: #401c91;
+    border: 2px solid #401c91;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    margin-right: 5px;
+}
+.app-btn img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+.work-steps:last-of-type{
+    margin-bottom: 80px;
+}
+
+.section-work {
+    background-color: #eaeaea;
+}
+
+
+/* USERS FEEDBACK SECTION */
+
+.section-feedback{ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url('img/back2');
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    border: 0;
+}
+blockquote:before{
+    content: "\201C";
+    font-size: 400%;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -5px;
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+cite img{
+    height: 45px;
+    border-radius: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*CONTACT FORM*/
+
+.section-form{
+    background-color: #dedbdb;
+}
+.contact-form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/*Back to Top*/
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
+
+
+/*FOOTER*/
+
+footer{
+    background-color: #888;
+    padding: 50px;
+}
+footer p{
+    color: #ccc;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 30px;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.social-links li{
+    font-size: 150%;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.socail-links li a:link,
+.socail-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #aaa;
+    transition: : color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+}
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+.ion-social-twitter:hover{
+    color: #55acee;
+}
+.ion-social-google:hover{
+    color: #dd4b39;
+}
+.ion-social-instagram:hover{
+    color: #125688;
+}
+
+
+/* ----BIG TABLETS TO 1200PX (WIDTH SMALLLER THAN 1200PX)-----  */
+@media only screen and (max-width: 1200px){
+    .search-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row{
+        padding: 0 2%;
+    }
+}
+/* ----SMALL TABLET TO BIG TABLET (FROM 768PX TO 1023PX)-----  */
+@media only screen and (max-width: 1023px){
+    body{
+        font-size: 18px;
+    }
+    section{padding: 60px 0;}
+    .step-box{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .step-box:last-child{
+        text-align: left;
+    }
+    .work-steps{margin-bottom: 40px;}
+    .work-steps:last-of-type{margin-bottom: 60px;}
+    .contact-form,
+    .donate-form{
+        width: 80%;
+    }
+    
+}
+/* ----SMALL PHONE TO SMALL TABLET (FROM 481PX TO 767PX)-----  */
+@media only screen and (max-width: 767px){
+    body{font-size: 16px;}
+    section{padding: 30px 0;}
+    .row,
+    .search-box{padding: 0 4%;}
+    .col{
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+
+    .search-btn{
+        border-radius: 10px;
+    }
+    .logo{
+    height: 70px;
+    width: auto;
+    }
+    #modal-launcher{
+        display: none;
+    }
+    .main-nav{
+        display: none;
+        float: left;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .main-nav li{display: block;}
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        font-size: 120%;
+        display: block;
+        border: 0;
+        padding: 5px 0;
+    }
+    .stiky .main-nav{margin-top: 10px;}
+    .stiky .main-nav li a:link,
+    .stiky .main-nav li a:visited{
+        padding: 10px 0;
+    }
+    .stiky .mobile-nav-icon i{color: #555;}
+    .stiky .mobile-nav-icon{margin-top: 10px;}
+    .mobile-nav-icon{
+        display: inline-block;
+        float: right;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .mobile-nav-icon i{
+        font-size: 200%;
+        color: #fff;
+    }
+    .stiky .mobile-login-icon i{color: #555;}
+    .stiky .mobile-login-icon{margin-top: 10px;}
+    .mobile-login-icon{
+        display: inline-block;
+        float: right;
+        padding-right: 20px;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .mobile-login-icon i{
+        font-size: 200%;
+        color: #fff;
+    }
+    h1{font-size: 160%;}
+    h2{font-size: 140%;}
+    h3{font-size: 120%;}
+    .search-input input[type=text]{
+        height: 50px;
+    }
+    .work-steps div{
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        font-size: 120%;
+    }
+    .work-steps{margin-bottom: 20px;}
+    .work-steps:last-of-type{margin-bottom: 20px;}
+}
+/* ----SMALL PHONES (FROM 0PX TO 480PX)-----  */
+@media only screen and (max-width: 1200px){
+    
+}

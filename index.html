@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,100' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/login.css">
+        <title>Book Donation Serice</title>
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo2.png" alt="Logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Logo" class="logo-trans">
+                    <a class="mobile-nav-icon js-nav-icon"><i class="ion-navicon-round"></i></a>
+                    <a id="mobile-modal-launcher" data-toggle="modal" data-target="#login-modal" class="mobile-login-icon js-login-icon" href="#"><i class="ion-person"></i></a>
+                    <ul class="main-nav">
+                        <li><a href="#section-work">How it Works</a></li>
+                        <li><a href="#section-donate">Donate Books</a></li>
+                        <li><a href="#section-feedback">Users Feedback</a></li>                       
+                        <li><a href="#section-form">Contact Us</a></li>
+                        <li id="modal-launcher" data-toggle="modal" data-target="#login-modal"><a href="#login">Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="search-box">
+                <h1>Start Searching for books<br>Within Different Cities of India</h1>
+                <div class="row">
+                    <div class="search-input col span-2-of-2">
+                        <input type="text" name="search-book" placeholder="Search Books..." >
+                    </div>
+                    <a href="#" class="btn search-btn">Search Books</a>
+                </div>
+            </div>
+        </header>
+        
+        <section class="section-work js-section-work" id="section-work">
+            <div class="row">
+                <h2 class="center">How it Works</h2>
+                <div class="col span-1-of-2 step-box">
+                    <img src="resources/img/screen.PNG" alt="appScreen" class="app-screen">
+                </div>
+                <div class="col span-1-of-2 step-box">
+                    <div class="work-steps">
+                        <div>1</div>
+                        <p>Search the books</p>
+                    </div>
+                    <div class="work-steps">
+                        <div>2</div>
+                        <p>Sign Up/Login to the System</p>
+                    </div>
+                    <div class="work-steps">
+                        <div>3</div>
+                        <p>Contact the Donar</p>
+                    </div>
+                    <div class="work-steps">
+                        <div>4</div>
+                        <p>Get Books Delivered to You</p>
+                    </div>
+                    <a href="#" class="app-btn"><img src="resources/img/app-android.png" alt="PlayStore"></a>
+                    <a href="#" class="app-btn"><img src="resources/img/appStore.png" alt="AppleStore"></a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-donate" id="section-donate">
+            <div class="row">
+                <h2 class="center">Enter The Book Details</h2>
+            </div>
+            <div class="row">
+                    <form method="post" action="#" class="donate-form">
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>Name of Book</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="text" name="bookname" id="bookname">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>Author Name</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="text" name="author" id="author">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>Type of Service</label>
+                                    </div>
+                                    <div class="col span-1-of-3">
+                                        <input type="radio" name="type" value="Donation" />Donation
+                                    </div>
+                                    <div class="col span-1-of-3">
+                                        <input type="radio" name="type" value="Exchange" />Exchange
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>About Book</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <textarea name="about" id="about"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </div>
+                    </form>
+                </div>
+        </section>
+        
+        <section class="section-feedback" id="section-feedback">
+            <div class="row">
+                <h2 class="center">Users feedbacks</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        Very nice website for exchanging of books between users from different users away
+                        <cite><img src="resources/img/Amritesh.jpg" alt="Amritesh Image">Amritesh Kumar</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                        <blockquote>
+                            Very nice website for exchanging of books between users from different users away
+                            <cite><img src="resources/img/Chinkesh.jpg" alt="Chinkesh Image">Chinkesh Kumar</cite>
+                        </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                        <blockquote>
+                            Very nice website for exchanging of books between users from different users away
+                            <cite><img src="resources/img/Supriya.JPG" alt="Supriya Image">Supriya Suman</cite>
+                        </blockquote>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-form" id="section-form">
+            
+                    <div class="row">
+                        <h2 class="center">We are happy to hear from you</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col span-2-of-2">
+                            <form method="post" action="#" class="contact-form">
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>Name</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="text" name="name" id="name">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="email" name="email" id="email">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>From Where you heard about us</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <select>
+                                            <option>-Select-</option>
+                                            <option>Friends</option>
+                                            <option>Internet</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>Message</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <textarea name="msg" id="msg"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col span-1-of-3">
+                                        <label>&nbsp;</label>
+                                    </div>
+                                    <div class="col span-2-of-3">
+                                        <input type="submit" value="Send">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+        </section>
+        
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Know More</a></li>
+                        <li><a href="#">Our Sites</a></li>
+                        <li><a href="#">Help US</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-google"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p class="center">
+                    Copyright &copy;2017 by Books Donation Service. All Rights Reserved<br>Designed By Chinkesh
+                </p>
+            </div>
+        </footer>
+        
+        <!-- Login Modal-->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header login_modal_header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title" id="myModalLabel">Login to Your Account</h3>
+                    </div>
+                    <div class="modal-body login-modal">
+                        <div class="clearfix"></div>
+                        <div id='social-icons-conatainer'>
+                            <div class='modal-body-left'>
+                                <div class="form-group">
+                                    <input type="text" id="username" placeholder="Enter your name" value="" class="form-control login-field">
+                                    <i class="fa fa-user login-field-icon"></i>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" id="login-pass" placeholder="Password" value="" class="form-control login-field">
+                                    <i class="fa fa-lock login-field-icon"></i>
+                                </div>
+
+                                <a href="#" class="btn btn-success">Login</a><br/><br/>
+                                <a href="#" >Lost your password?</a>
+                            </div>
+
+                            <div class='modal-body-right'>
+                                <div class="modal-social-icons">
+                                    <a href='#' class="btn btn-default facebook"> <i class="ion-social-facebook"></i> Sign In with Facebook </a>
+                                    <a href='#' class="btn btn-default twitter"> <i class="ion-social-twitter"></i> Sign In with Twitter </a>
+                                    <a href='#' class="btn btn-default google"> <i class="ion-social-googleplus"></i> Sign In with Google </a>
+                                    <a href='#' class="btn btn-default linkedin"> <i class="ion-social-linkedin"></i> Sign In with Linkedin </a>
+                                </div>
+                            </div>
+                            <div id='center-line'> OR </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <div class="form-group modal-register-btn">
+                            <button class="btn btn-default"> New User Please Register</button>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="modal-footer login_modal_footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- BackToTop Button -->
+        <a href="javascript:void(0);" id="scroll" title="Go to Home" style="display: none;">Top<span></span></a>  
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js"></script>
+    <script src="vendors/js/gmaps.js"></script>
+    <script src="resources/js/style.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
